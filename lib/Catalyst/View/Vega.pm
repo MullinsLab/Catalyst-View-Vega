@@ -22,6 +22,7 @@ Catalyst::View::Vega - A Catalyst view for pre-processing Vega specs
 
     # In YourApplication.pm
     #
+    YourApplication->inject_component( 'View::Vega' => { from_component => 'Catalyst::View::Vega' } );
     YourApplication->config(
         'View::Vega' => {
             path => YourApplication->path_to("root/vega")->stringify,
