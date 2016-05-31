@@ -1,0 +1,9 @@
+/Catalyst-View-Vega-*
+/blib
+/Makefile
+/Makefile.old
+/pm_to_blib
+/.build
+MYMETA.*
+!META.json
+/.prove
