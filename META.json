@@ -56,6 +56,17 @@
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/MullinsLab/Catalyst-View-Vega/issues"
+      },
+      "homepage" : "https://github.com/MullinsLab/Catalyst-View-Vega",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/MullinsLab/Catalyst-View-Vega.git",
+         "web" : "https://github.com/MullinsLab/Catalyst-View-Vega"
+      }
+   },
    "version" : "0.01",
    "x_contributors" : [
       "Thomas Sibley <tsibley@cpan.org>"
