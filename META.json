@@ -1,5 +1,5 @@
 {
-   "abstract" : "Blah blah blah",
+   "abstract" : "A Catalyst view for pre-processing Vega specs",
    "author" : [
       "Thomas Sibley <trsibley@uw.edu>"
    ],
@@ -37,6 +37,15 @@
       },
       "runtime" : {
          "requires" : {
+            "Catalyst::Component::InstancePerContext" : "0",
+            "Catalyst::View" : "0",
+            "JSON::MaybeXS" : "0",
+            "List::Util" : "0",
+            "Moose" : "0",
+            "MooseX::Clone" : "0",
+            "Path::Tiny" : "0",
+            "Types::Standard" : "0",
+            "namespace::autoclean" : "0",
             "perl" : "5.008005"
          }
       },
@@ -47,6 +56,9 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.01"
+   "version" : "0.01",
+   "x_contributors" : [
+      "Thomas Sibley <tsibley@cpan.org>"
+   ]
 }
 

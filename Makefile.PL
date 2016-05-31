@@ -7,7 +7,7 @@ use 5.008005;
 use ExtUtils::MakeMaker;
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Blah blah blah",
+  "ABSTRACT" => "A Catalyst view for pre-processing Vega specs",
   "AUTHOR" => "Thomas Sibley <trsibley\@uw.edu>",
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0
@@ -16,7 +16,17 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "MIN_PERL_VERSION" => "5.008005",
   "NAME" => "Catalyst::View::Vega",
-  "PREREQ_PM" => {},
+  "PREREQ_PM" => {
+    "Catalyst::Component::InstancePerContext" => 0,
+    "Catalyst::View" => 0,
+    "JSON::MaybeXS" => 0,
+    "List::Util" => 0,
+    "Moose" => 0,
+    "MooseX::Clone" => 0,
+    "Path::Tiny" => 0,
+    "Types::Standard" => 0,
+    "namespace::autoclean" => 0
+  },
   "TEST_REQUIRES" => {
     "Test::More" => "0.96"
   },
@@ -28,7 +38,16 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "Test::More" => "0.96"
+  "Catalyst::Component::InstancePerContext" => 0,
+  "Catalyst::View" => 0,
+  "JSON::MaybeXS" => 0,
+  "List::Util" => 0,
+  "Moose" => 0,
+  "MooseX::Clone" => 0,
+  "Path::Tiny" => 0,
+  "Test::More" => "0.96",
+  "Types::Standard" => 0,
+  "namespace::autoclean" => 0
 );
 
 
