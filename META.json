@@ -67,7 +67,7 @@
          "web" : "https://github.com/MullinsLab/Catalyst-View-Vega"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_contributors" : [
       "Thomas Sibley <tsibley@cpan.org>"
    ]
