@@ -105,7 +105,7 @@ for my $action (qw[ /single/action /chained/action /chained/unbound ]) {
     ok($res, '/error/bad-name');
     is($res->code, 500, "status is 500")
         or die $res->decoded_content;
-    like($c->last_error, qr/cannot find a dataset named «DNE»/, "error message matches");
+    like($c->error->[-1], qr/cannot find a dataset named «DNE»/, "error message matches");
 }
 
 done_testing;
